@@ -1,4 +1,5 @@
 import Image from "next/image";
+import AddToCartButton from "../../../components/AddToCartButton";
 import { Product } from "../../../types/product";
 
 interface ProductDetailsPageProps {
@@ -92,9 +93,7 @@ export default async function ProductDetailsPage({
 								)}
 							</div>
 
-							<button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 rounded-lg transition-colors">
-								Add to Cart
-							</button>
+							<AddToCartButton product={product} />
 						</div>
 					</div>
 				</div>
