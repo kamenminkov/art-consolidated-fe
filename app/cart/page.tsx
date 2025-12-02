@@ -68,6 +68,7 @@ export default function CartPage() {
 									className="w-16 px-2 py-1 border rounded text-center"
 								/>
 								<button
+									type="button"
 									onClick={() => removeItem(it.id)}
 									className="text-red-600 hover:underline text-sm"
 								>
@@ -92,10 +93,17 @@ export default function CartPage() {
 				</div>
 
 				<div className="mt-4 flex gap-3">
-					<button onClick={() => clear()} className="px-4 py-2 border rounded">
+					<button
+						type="button"
+						onClick={() => clear()}
+						className="px-4 py-2 border rounded"
+					>
 						Clear cart
 					</button>
-					<button className="ml-auto px-4 py-2 bg-emerald-600 text-white rounded">
+					<button
+						type="button"
+						className="ml-auto px-4 py-2 bg-emerald-600 text-white rounded"
+					>
 						Checkout
 					</button>
 				</div>
