@@ -1,0 +1,16 @@
+{
+	"useTabs": true,
+	"trailingComma": "all",
+	"bracketSpacing": true,
+	"singleQuote": false,
+	"semi": true,
+	"overrides": [
+		{
+			"files": ["package.json", "package-lock.json"],
+			"options": {
+				"tabWidth": 2,
+				"useTabs": false
+			}
+		}
+	]
+}
